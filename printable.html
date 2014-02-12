@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Printable</title>
+  <link rel="stylesheet" type="text/css" href="printable.css">
+  <script type="text/javascript" src="lib/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="lib/mustache.js"></script>
+  <script type="text/template" id="tmpl">
+  {{#issues}}
+    <article id="issue-{{id}}" class="issue">
+      <div class="row">
+        <span class="id">#{{id}}</span>
+        <span class="project">{{project}}</span>
+        <span class="tracker">{{tracker}}</span>
+      </div>
+      <div class="row">
+        <span class="requester">{{requester}}</span>
+        <span class="client">{{client}}</span>
+        <span class="estimate">{{storyPoint}}sp({{hours}}h)</span>
+      </div>
+      <div class="subject row last">{{subject}}</div>
+    </article>
+  {{/issues}}
+  </script>
+</head>
+<body>
+  <div id="main"><script type="text/javascript" src="printable.js"></script></div>
+</body>
+</html>

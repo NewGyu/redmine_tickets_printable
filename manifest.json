@@ -1,0 +1,25 @@
+{
+  "name": "Tickets-Tickets",
+  "version": "1.0",
+  "description": "チケットを印刷用に整形する奴",
+  "manifest_version": 2,
+  "icons" : {
+    "16": "icon/unko16.png"
+    ,"48": "icon/unko48.png"
+    ,"128": "icon/unko128.png"
+  },
+  "background" : {
+    "scripts": ["background/bk.js"]
+  },
+  "page_action": {
+    "default_icon" : "icon/unko16.png"
+    ,"default_title": "印刷用ページ出す"
+  },
+  "content_scripts" : [{
+      "matches" : ["*://*/*/issues*"],
+      "js" : ["lib/jquery-2.1.0.min.js","contentscript.js"]
+  }],
+  "permissions": [
+    "tabs"
+  ]
+}

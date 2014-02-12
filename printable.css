@@ -1,0 +1,62 @@
+div,span {
+  font-size: 20px;
+}
+
+span {
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+}
+
+#main {
+  width: 1024px;
+}
+
+.issue {
+  display: inline-block;
+  width: 360px;
+  border: solid 2px #000;
+  margin: 0.2em;
+  vertical-align: top;
+  box-shadow: 3px 3px 8px #555;
+  border-radius: 10px;
+}
+
+.row {
+  border-bottom: solid 1px #000;
+  height: 30px;
+}
+
+.last {
+  border-bottom: none;
+}
+
+.id {
+  width: 25%;
+  border-right: solid 1px #000;
+  font-weight: bold;
+}
+.tracker{
+  width: 30%;
+}
+.project {
+  width: 30%;
+  border-right: solid 1px #000;
+}
+.estimate {
+  width: 30%;
+}
+.requester {
+  width: 33%;
+  border-right: solid 1px #000;
+}
+.client {
+  width: 33%;
+  border-right: solid 1px #000;
+}
+.subject {
+  font-size: 28px;
+  height: 3.5em;
+  overflow: hidden;
+  padding: 0px 5px;
+}
